@@ -1,0 +1,9 @@
+{
+  "product": [
+    {
+      "__resolveType": "algolia/workflows/index/product.ts",
+      "product": []
+    }
+  ],
+  "__resolveType": "vtex/workflows/events.ts"
+}
