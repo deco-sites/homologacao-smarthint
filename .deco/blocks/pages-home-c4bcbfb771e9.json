@@ -144,13 +144,12 @@
         "showArrows": true
       },
       "products": {
-        "props": {
-          "sort": "price:desc",
-          "count": 6,
-          "collection": "139"
-        },
         "crossSelling": "similars",
-        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+        "__resolveType": "linx-impulse/loaders/products/productList.ts",
+        "shelves": [],
+        "feature": "MostPopular",
+        "position": "top",
+        "index": 0
       },
       "cardLayout": {
         "layout": {
@@ -282,14 +281,32 @@
       "tabs": [
         {
           "title": "Woman",
-          "products": {
-            "props": {
-              "sort": "price:desc",
-              "count": 8,
-              "query": "vestido"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
+          "products": [
+            {
+              "@type": "Product",
+              "additionalProperty": [],
+              "aggregateRating": {
+                "@type": "AggregateRating"
+              },
+              "brand": {
+                "@type": "Brand"
+              },
+              "isRelatedTo": [],
+              "isSimilarTo": [],
+              "isVariantOf": {
+                "@type": "ProductGroup",
+                "hasVariant": [],
+                "additionalProperty": []
+              },
+              "offers": {
+                "@type": "AggregateOffer",
+                "offers": []
+              },
+              "review": [],
+              "isAccessoryOrSparePartFor": [],
+              "questions": []
+            }
+          ]
         },
         {
           "title": "Man",

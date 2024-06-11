@@ -275,7 +275,7 @@
   },
   "/.deco/blocks/pages-search-2f446eadce44.json": {
     "name": "Search",
-    "path": "/s",
+    "path": "/busca",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
