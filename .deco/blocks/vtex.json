@@ -1,1 +1,18 @@
-{"account":"bravtexfashionstore","platform":"vtex","publicUrl":"fashion.bravtexstores.com.br","salesChannel":"1","__resolveType":"decohub/apps/vtex.ts","defaultSegment":{"channelPrivacy":"public"}}
+{
+  "account": "abracasa",
+  "platform": "vtex",
+  "publicUrl": "https://www.abracasa.com.br/",
+  "salesChannel": "1",
+  "__resolveType": "decohub/apps/vtex.ts",
+  "defaultSegment": {
+    "channelPrivacy": "public"
+  },
+  "appKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "7f0e28c4d50932a6fb1a0f64f223bea03abef4797b0318e472dbdb7872ecc3dd"
+  },
+  "appToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "d99e64bd82c8d10e4177c21c5f27a733630316136d3ee20a756f8d53399a280b63d38e4ac1e987fd9fda42ce5cc0dfafcd821003d4bfb5e2f450316399aac4c5d6eec9d48770150cffc2fad148a9d63c36db52aa2999169eb0c8f4447717521aaa3baa310483c322afb10967a7ba53171b1ae8b2fae1a420f0500136826ccbb760aaa74e1bd564102dc1c98488aa2e61"
+  }
+}
