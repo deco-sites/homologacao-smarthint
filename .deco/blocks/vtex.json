@@ -1,7 +1,7 @@
 {
-  "account": "abracasa",
+  "account": "lojaprohall",
   "platform": "vtex",
-  "publicUrl": "https://www.abracasa.com.br/",
+  "publicUrl": "https://www.lojaprohall.com.br/",
   "salesChannel": "1",
   "__resolveType": "decohub/apps/vtex.ts",
   "defaultSegment": {
@@ -9,10 +9,10 @@
   },
   "appKey": {
     "__resolveType": "website/loaders/secret.ts",
-    "encrypted": "7f0e28c4d50932a6fb1a0f64f223bea03abef4797b0318e472dbdb7872ecc3dd"
+    "encrypted": "2b9216e00ce821d6df38cb84546f8fbd5f50e02c49c148bff06a0cea21bd4b9a"
   },
   "appToken": {
     "__resolveType": "website/loaders/secret.ts",
-    "encrypted": "d99e64bd82c8d10e4177c21c5f27a733630316136d3ee20a756f8d53399a280b63d38e4ac1e987fd9fda42ce5cc0dfafcd821003d4bfb5e2f450316399aac4c5d6eec9d48770150cffc2fad148a9d63c36db52aa2999169eb0c8f4447717521aaa3baa310483c322afb10967a7ba53171b1ae8b2fae1a420f0500136826ccbb760aaa74e1bd564102dc1c98488aa2e61"
+    "encrypted": "ef83ba5ca25d5c86877b15360159c77f975d1069c9e7a000977aca559b13a2e499158b7d35e31bb3329f1660b44403ae89125df18919f9df9f128a0f1455f3552d9505d8b1fc222c828dccc693fad5aa0c734154f7c3dccdbbf58171d2359238ebe353087a955b0024af8e163b677f6c99f80a387e5b5271f1af5a686d19cd8f09366542c31e899d922feb9c9faf5380"
   }
 }
