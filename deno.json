@@ -1,7 +1,7 @@
 {
   "imports": {
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.71.7/",
-    "apps/": "https://denopkg.com/IncognitaDev/apps@96ab4d02425096f7f0fe314de417b62d70ccb1e0/",
+    "apps/": "https://denopkg.com/IncognitaDev/apps@0626d006a0b0667d6b394f856bf94d30e515832c/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "https://esm.sh/preact@10.19.6",
     "preact/": "https://esm.sh/preact@10.19.6/",
