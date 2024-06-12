@@ -13,7 +13,13 @@
     },
     {
       "page": {
-        "__resolveType": "Search Loader"
+        "__resolveType": "linx-impulse/loaders/products/hotsite.ts",
+        "sort": "relevance",
+        "user": {
+          "gender": "https://schema.org/Male",
+          "image": []
+        },
+        "resultsPerPage": -2
       },
       "layout": {
         "columns": {
