@@ -1292,7 +1292,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 70,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1314,7 +1314,7 @@
               },
               {
                 "type": "stack",
-                "width": 30,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1363,7 +1363,8 @@
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2Fpages-search-2f446eadce44.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": "error"
           }
         }
       }
