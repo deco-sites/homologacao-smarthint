@@ -2,6 +2,10 @@
   "name": "Home",
   "sections": [
     {
+      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
+      "pageType": "home"
+    },
+    {
       "__resolveType": "Header - 01"
     },
     {
@@ -277,50 +281,13 @@
       }
     },
     {
+      "title": "Best Sellers",
       "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
       "tabs": [
         {
-          "title": "Woman",
-          "products": [
-            {
-              "@type": "Product",
-              "additionalProperty": [],
-              "aggregateRating": {
-                "@type": "AggregateRating"
-              },
-              "brand": {
-                "@type": "Brand"
-              },
-              "isRelatedTo": [],
-              "isSimilarTo": [],
-              "isVariantOf": {
-                "@type": "ProductGroup",
-                "hasVariant": [],
-                "additionalProperty": []
-              },
-              "offers": {
-                "@type": "AggregateOffer",
-                "offers": []
-              },
-              "review": [],
-              "isAccessoryOrSparePartFor": [],
-              "questions": []
-            }
-          ]
-        },
-        {
-          "title": "Man",
-          "products": {
-            "props": {
-              "sort": "price:desc",
-              "count": 8,
-              "collection": "140"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
+          "products": []
         }
       ],
-      "title": "Best Sellers",
       "layout": {
         "headerfontSize": "Large",
         "headerAlignment": "center"
@@ -330,8 +297,8 @@
       }
     },
     {
-      "title": "Best Sellers",
       "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+      "title": "Best Sellers",
       "tabs": [
         {
           "title": "Woman",
@@ -401,7 +368,15 @@
       "__resolveType": "Footer - 04"
     },
     {
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "smarthint/loaders/searchListPage.ts",
+        "searchSort": 0,
+        "ruletype": "valuedouble",
+        "filter": [],
+        "condition": {},
+        "size": 24
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

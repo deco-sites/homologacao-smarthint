@@ -19,7 +19,12 @@
           "gender": "https://schema.org/Male",
           "image": []
         },
-        "resultsPerPage": -2
+        "resultsPerPage": -2,
+        "searchSort": 0,
+        "ruletype": "valuedouble",
+        "filter": [],
+        "condition": {},
+        "size": 24
       },
       "layout": {
         "columns": {
