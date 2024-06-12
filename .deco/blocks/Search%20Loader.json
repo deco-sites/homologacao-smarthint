@@ -1,10 +1,6 @@
 {
   "data": {
-    "facets": [],
-    "hitsPerPage": 12,
-    "startingPage": 0,
-    "__resolveType": "algolia/loaders/product/listingPage.ts",
-    "sortFacetValuesBy": "count",
+    "__resolveType": "smarthint/loaders/searchListPage.ts",
     "@type": "ProductListingPage",
     "breadcrumb": {
       "@type": "BreadcrumbList"
@@ -14,7 +10,12 @@
     "pageInfo": {
       "pageTypes": []
     },
-    "sortOptions": []
+    "sortOptions": [],
+    "searchSort": 0,
+    "filter": [],
+    "ruletype": "valuedouble",
+    "condition": {},
+    "size": 24
   },
   "extensions": [
     {

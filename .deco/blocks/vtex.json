@@ -1,7 +1,6 @@
 {
   "account": "lojaprohall",
   "platform": "vtex",
-  "publicUrl": "https://www.lojaprohall.com.br/",
   "salesChannel": "1",
   "__resolveType": "decohub/apps/vtex.ts",
   "defaultSegment": {
@@ -14,5 +13,6 @@
   "appToken": {
     "__resolveType": "website/loaders/secret.ts",
     "encrypted": "ef83ba5ca25d5c86877b15360159c77f975d1069c9e7a000977aca559b13a2e499158b7d35e31bb3329f1660b44403ae89125df18919f9df9f128a0f1455f3552d9505d8b1fc222c828dccc693fad5aa0c734154f7c3dccdbbf58171d2359238ebe353087a955b0024af8e163b677f6c99f80a387e5b5271f1af5a686d19cd8f09366542c31e899d922feb9c9faf5380"
-  }
+  },
+  "publicUrl": "https://www.lojaprohall.com.br/"
 }

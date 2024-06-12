@@ -6,24 +6,29 @@
   },
   "sections": [
     {
+      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
+      "pageType": "product"
+    },
+    {
+      "__resolveType": "commerce/sections/Seo/SeoPDP.tsx",
       "jsonLD": {
         "__resolveType": "PDP Loader"
       },
       "jsonLDs": [
         {}
-      ],
-      "__resolveType": "commerce/sections/Seo/SeoPDP.tsx"
+      ]
     },
     {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Product/ProductDetails.tsx",
       "page": {
         "__resolveType": "PDP Loader"
-      },
-      "__resolveType": "site/sections/Product/ProductDetails.tsx"
+      }
     },
     {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "title": "You may also like",
       "products": {
         "slug": {
@@ -32,15 +37,13 @@
         },
         "crossSelling": "whosawalsosaw",
         "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
-      },
-      "__resolveType": "site/sections/Product/ProductShelf.tsx"
+      }
     },
     {
       "__resolveType": "Footer - 01"
     },
     {
-      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
-      "pageType": "product"
+      "__resolveType": "site/sections/Product/ProductShelf.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

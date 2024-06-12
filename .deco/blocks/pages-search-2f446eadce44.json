@@ -3,8 +3,12 @@
   "path": "/busca",
   "sections": [
     {
-      "type": "website",
+      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
+      "pageType": "search"
+    },
+    {
       "__resolveType": "website/sections/Seo/Seo.tsx",
+      "type": "website",
       "titleTemplate": "%s | Deco.cx",
       "descriptionTemplate": "%s | Deco.cx"
     },
@@ -12,35 +16,24 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "__resolveType": "linx-impulse/loaders/products/hotsite.ts",
-        "sort": "relevance",
-        "user": {
-          "gender": "https://schema.org/Male",
-          "image": []
-        },
-        "resultsPerPage": -2,
-        "searchSort": 0,
-        "ruletype": "valuedouble",
-        "filter": [],
-        "condition": {},
-        "size": 24
+        "__resolveType": "smarthint/loaders/searchListPage.ts",
+        "size": 20,
+        "condition": {}
       },
       "layout": {
         "columns": {
           "mobile": 2,
           "desktop": 4
         },
-        "variant": "aside"
+        "variant": "aside",
+        "format": "Pagination"
       },
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "startingPage": 0
     },
     {
       "__resolveType": "Footer - 01"
-    },
-    {
-      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
-      "pageType": "search"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

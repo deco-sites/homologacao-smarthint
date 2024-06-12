@@ -6,21 +6,27 @@
   },
   "sections": [
     {
+      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
+      "pageType": "category"
+    },
+    {
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "jsonLD": {
         "__resolveType": "PLP Loader"
-      },
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      }
     },
     {
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "__resolveType": "smarthint/loaders/searchListPage.ts",
         "searchSort": 0,
         "ruletype": "valuedouble",
         "filter": [],
-        "condition": {}
+        "condition": {},
+        "size": 24
       },
       "layout": {
         "columns": {
@@ -33,8 +39,7 @@
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
       },
-      "startingPage": 1,
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "startingPage": 1
     },
     {
       "__resolveType": "Footer - 01"
