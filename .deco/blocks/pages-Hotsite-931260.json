@@ -3,6 +3,23 @@
   "path": "/hotsite",
   "sections": [
     {
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
+      "pageType": "Others"
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "0",
+        "pagetype": {
+          "type": "others"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
       "__resolveType": "Header - 01"
     },
     {
@@ -10,8 +27,9 @@
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "smarthint": true,
       "page": {
-        "__resolveType": "Search Loader"
+        "__resolveType": "smarthint/loaders/productListingPage.ts"
       }
     }
   ],

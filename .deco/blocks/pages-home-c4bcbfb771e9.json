@@ -6,6 +6,19 @@
       "pageType": "home"
     },
     {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "1",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
       "__resolveType": "Header - 01"
     },
     {
@@ -275,8 +288,8 @@
       }
     },
     {
-      "title": "Blogposts",
       "__resolveType": "site/sections/Content/BlogPosts.tsx",
+      "title": "Blogposts",
       "posts": [
         {
           "alt": "Item of the Summer",

@@ -7,19 +7,10 @@
       "pageType": "search"
     },
     {
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "type": "website",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    {
-      "__resolveType": "Header - 01"
-    },
-    {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "__resolveType": "smarthint/loaders/searchListPage.ts",
-        "size": 20,
+        "size": 24,
         "condition": {}
       },
       "layout": {
@@ -30,7 +21,17 @@
         "variant": "aside",
         "format": "Pagination"
       },
-      "startingPage": 0
+      "startingPage": 0,
+      "smarthint": true
+    },
+    {
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "type": "website",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    {
+      "__resolveType": "Header - 01"
     },
     {
       "__resolveType": "Footer - 01"

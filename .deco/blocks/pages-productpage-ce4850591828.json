@@ -19,6 +19,35 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "1",
+        "pagetype": {
+          "type": "product",
+          "page": {
+            "__resolveType": "vtex/loaders/legacy/productDetailsPage.ts",
+            "slug": {
+              "__resolveType": "website/functions/requestToParam.ts",
+              "param": "slug"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList"
+            },
+            "filters": [],
+            "products": [],
+            "pageInfo": {
+              "pageTypes": []
+            },
+            "sortOptions": []
+          }
+        },
+        "channel": "padrao"
+      }
+    },
+    {
       "__resolveType": "Header - 01"
     },
     {
