@@ -1,5 +1,5 @@
 {
-  "account": "lojaprohall",
+  "account": "prohall",
   "platform": "vtex",
   "salesChannel": "1",
   "__resolveType": "decohub/apps/vtex.ts",
