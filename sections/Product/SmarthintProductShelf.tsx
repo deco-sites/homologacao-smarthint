@@ -6,26 +6,32 @@ export interface Props {
 }
 
 function SmarthintProductShelf({ smarthint }: Props) {
-  if (!smarthint) return null;
+  if (!smarthint?.length) return null;
 
-  return smarthint.map(
-    ({
-      products,
-      titleRecommendation,
-      eventGoogleAnalytics,
-      nameRecommendation,
-      position,
-    }) => {
-      if (!products?.length) return null;
+  return (
+    <>
+      {smarthint.map(
+        ({
+          products,
+          titleRecommendation,
+          eventGoogleAnalytics,
+          nameRecommendation,
+          position,
+        }) => {
+          if (!products?.length) return null;
 
-      <ProductShelf
-        products={products}
-        title={titleRecommendation}
-        itemListName={eventGoogleAnalytics}
-        nameRecommendation={nameRecommendation}
-        positionRecommendation={position}
-      />;
-    },
+          return (
+            <ProductShelf
+              products={products}
+              title={titleRecommendation}
+              itemListName={eventGoogleAnalytics}
+              nameRecommendation={nameRecommendation}
+              positionRecommendation={position}
+            />
+          );
+        },
+      )}
+    </>
   );
 }
 
