@@ -328,5 +328,11 @@
   "/.deco/blocks/smarthint.json": {
     "blockType": "apps",
     "__resolveType": "decohub/apps/smarthint.ts"
+  },
+  "/.deco/blocks/pages-Hotsite-931260.json": {
+    "name": "Hotsite",
+    "path": "/hotsite",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

@@ -2,7 +2,7 @@
   "name": "Home",
   "sections": [
     {
-      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
       "pageType": "home"
     },
     {

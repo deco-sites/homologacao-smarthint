@@ -6,7 +6,7 @@
   },
   "sections": [
     {
-      "__resolveType": "smarthint/sections/Analytics/Smarthint.tsx",
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
       "pageType": "product"
     },
     {
@@ -41,9 +41,6 @@
     },
     {
       "__resolveType": "Footer - 01"
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
