@@ -6,19 +6,6 @@
       "pageType": "home"
     },
     {
-      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
-      "smarthint": {
-        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
-        "filter": [],
-        "products": [],
-        "position": "1",
-        "pagetype": {
-          "type": "home"
-        },
-        "channel": "padrao"
-      }
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -119,6 +106,19 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "1",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
       "content": [
         {
@@ -126,6 +126,19 @@
           "repeat": 30
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao",
+        "position": "2"
+      }
     },
     {
       "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
