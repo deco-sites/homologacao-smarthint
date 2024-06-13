@@ -28,6 +28,7 @@ export interface Layout {
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
+  smarthint?: boolean;
   layout?: Layout;
 
   /** @description 0 for ?page=0 as your first page */
@@ -47,6 +48,7 @@ function Result({
   layout,
   startingPage = 0,
   url: _url,
+  smarthint,
 }: Omit<Props, "page"> & {
   page: ProductListingPage;
   url: string;
@@ -78,7 +80,8 @@ function Result({
         )}
 
         <div class="flex flex-row">
-          {layout?.variant === "aside" && filters.length > 0 &&
+          {layout?.variant === "aside" &&
+            filters.length > 0 &&
             (isFirstPage || !isPartial) && (
             <aside class="hidden sm:block w-min min-w-[250px]">
               <Filters filters={filters} />
@@ -91,6 +94,7 @@ function Result({
               layout={{ columns: layout?.columns, format }}
               pageInfo={pageInfo}
               url={url}
+              smarthint={smarthint}
             />
           </div>
         </div>
@@ -131,7 +135,7 @@ function Result({
             item_list_id: breadcrumb.itemListElement?.at(-1)?.item,
             items: page.products?.map((product, index) =>
               mapProductToAnalyticsItem({
-                ...(useOffer(product.offers)),
+                ...useOffer(product.offers),
                 index: offset + index,
                 product,
                 breadcrumbList: page.breadcrumb,
@@ -144,9 +148,7 @@ function Result({
   );
 }
 
-function SearchResult(
-  { page, ...props }: ReturnType<typeof loader>,
-) {
+function SearchResult({ page, ...props }: ReturnType<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }

@@ -13,6 +13,7 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
+import { SmarthintSendEventOnClick } from "apps/smarthint/components/Click.tsx";
 
 interface Props {
   product: Product;
@@ -26,6 +27,10 @@ interface Props {
   index?: number;
 
   platform?: Platform;
+
+  nameRecommendation?: string;
+
+  positionRecommendation?: string;
 }
 
 const WIDTH = 200;
@@ -37,8 +42,18 @@ function ProductCard({
   itemListName,
   platform,
   index,
+  nameRecommendation,
+  positionRecommendation,
 }: Props) {
-  const { url, productID, name, image: images, offers, isVariantOf } = product;
+  const {
+    url,
+    productID,
+    name,
+    image: images,
+    offers,
+    isVariantOf,
+    inProductGroupWithID,
+  } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
@@ -74,12 +89,21 @@ function ProductCard({
           },
         }}
       />
-
+      {positionRecommendation && nameRecommendation && (
+        <SmarthintSendEventOnClick
+          id={id}
+          event={{
+            position: index + 1,
+            productGroupID: inProductGroupWithID,
+            productPrice: price,
+            clickProduct: url!,
+            clickFeature: nameRecommendation,
+            positionRecommendation,
+          }}
+        />
+      )}
       <div class="flex flex-col gap-2 lg:group-hover:-translate-y-2">
-        <figure
-          class="relative overflow-hidden"
-          style={{ aspectRatio }}
-        >
+        <figure class="relative overflow-hidden" style={{ aspectRatio }}>
           {/* Wishlist button */}
           <div
             class={clx(
@@ -198,9 +222,7 @@ function ProductCard({
           <span class="line-through text-sm">
             {formatPrice(listPrice, offers?.priceCurrency)}
           </span>
-          <span>
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
+          <span>{formatPrice(price, offers?.priceCurrency)}</span>
         </div>
 
         {/* Installments */}
@@ -208,11 +230,7 @@ function ProductCard({
           ou {installments}
         </span>
 
-        <a
-          href={relativeUrl}
-          aria-label="view product"
-          class="btn btn-block"
-        >
+        <a href={relativeUrl} aria-label="view product" class="btn btn-block">
           Ver produto
         </a>
       </div>

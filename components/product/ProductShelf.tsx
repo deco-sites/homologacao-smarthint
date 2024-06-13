@@ -14,6 +14,18 @@ export interface Props {
   products: Product[] | null;
   title?: string;
   description?: string;
+  /**
+   * @hide
+   */
+  itemListName?: string;
+  /**
+   * @hide
+   */
+  nameRecommendation?: string;
+  /**
+   * @hide
+   */
+  positionRecommendation?: string;
   layout?: {
     numberOfSliders?: {
       mobile?: 1 | 2 | 3 | 4 | 5;
@@ -30,6 +42,9 @@ function ProductShelf({
   title,
   description,
   layout,
+  itemListName,
+  nameRecommendation,
+  positionRecommendation,
 }: Props) {
   const id = useId();
   const platform = usePlatform();
@@ -81,7 +96,9 @@ function ProductShelf({
             >
               <ProductCard
                 product={product}
-                itemListName={title}
+                itemListName={itemListName ?? title}
+                nameRecommendation={nameRecommendation}
+                positionRecommendation={positionRecommendation}
                 platform={platform}
                 index={index}
               />
@@ -114,7 +131,7 @@ function ProductShelf({
                 mapProductToAnalyticsItem({
                   index,
                   product,
-                  ...(useOffer(product.offers)),
+                  ...useOffer(product.offers),
                 })
               ),
             },
