@@ -160,6 +160,19 @@
       "expiresAt": "2024-03-15T17:23:00.000Z"
     },
     {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "3",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
       "content": [
         {
@@ -266,38 +279,16 @@
       }
     },
     {
-      "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-      "title": "Best Sellers",
-      "tabs": [
-        {
-          "title": "Woman",
-          "products": {
-            "props": {
-              "sort": "price:desc",
-              "count": 8,
-              "query": "vestido"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "4",
+        "pagetype": {
+          "type": "home"
         },
-        {
-          "title": "Man",
-          "products": {
-            "props": {
-              "sort": "price:desc",
-              "count": 8,
-              "collection": "140"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
-        }
-      ],
-      "layout": {
-        "headerfontSize": "Large",
-        "headerAlignment": "center"
-      },
-      "cardLayout": {
-        "__resolveType": "Product Card Layout - 01"
+        "channel": "padrao"
       }
     },
     {
@@ -332,6 +323,19 @@
           "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "5",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
     },
     {
       "__resolveType": "Footer - 04"

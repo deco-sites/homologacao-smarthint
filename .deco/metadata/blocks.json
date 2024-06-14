@@ -334,5 +334,21 @@
     "path": "/hotsite",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FProduct%2FSmarthintProductShelf.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FProduct%2FProductShelfTabbed.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FProduct%2FProductDetails.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductDetails.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FHeader%2FHeader.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Header/Header.tsx"
   }
 }

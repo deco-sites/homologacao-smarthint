@@ -1,5 +1,5 @@
 {
-  "account": "prohall",
+  "account": "calvinklein",
   "platform": "vtex",
   "salesChannel": "1",
   "__resolveType": "decohub/apps/vtex.ts",
@@ -8,11 +8,11 @@
   },
   "appKey": {
     "__resolveType": "website/loaders/secret.ts",
-    "encrypted": "2b9216e00ce821d6df38cb84546f8fbd5f50e02c49c148bff06a0cea21bd4b9a"
+    "encrypted": "30de4571e2987c4c92f7838f07b0819276aeff5b67c137ba571a6072ac26b897"
   },
   "appToken": {
     "__resolveType": "website/loaders/secret.ts",
-    "encrypted": "ef83ba5ca25d5c86877b15360159c77f975d1069c9e7a000977aca559b13a2e499158b7d35e31bb3329f1660b44403ae89125df18919f9df9f128a0f1455f3552d9505d8b1fc222c828dccc693fad5aa0c734154f7c3dccdbbf58171d2359238ebe353087a955b0024af8e163b677f6c99f80a387e5b5271f1af5a686d19cd8f09366542c31e899d922feb9c9faf5380"
+    "encrypted": "3ea010c16ebbd83dd20cc2e774b8d237b6781a99b642ac70f0832224909bef449900bd8aa4458d91774ce4113e22c50000c8ad40c2630ac1bfa9f6d4fe306e1410a7f53ed4e6d854b8eafa044a4ac40d7694ec8d9d58a46636fc8879b43ee03d0bd1ec5a71677cd80786aa7002924e4401097084edbc9d8131281d87172e6699ae37b84205435107df627aebdf6e8d40"
   },
-  "publicUrl": "https://www.lojaprohall.com.br/"
+  "publicUrl": "https://www.calvinklein.com.br/"
 }

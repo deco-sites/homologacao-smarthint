@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+  "smarthint": [
+    {
+      "products": [],
+      "positionBanner": "First"
+    }
+  ]
+}
