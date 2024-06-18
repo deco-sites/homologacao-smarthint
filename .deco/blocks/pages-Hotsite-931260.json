@@ -7,6 +7,27 @@
       "pageType": "Others"
     },
     {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Images/SmartHintBanner.tsx",
+      "banners": {
+        "__resolveType": "smarthint/loaders/PLPBanners.ts",
+        "searchSort": 0,
+        "filter": [],
+        "ruletype": "valuedouble",
+        "condition": {}
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "smarthint": true,
+      "page": {
+        "__resolveType": "smarthint/loaders/productListingPage.ts",
+        "size": 24
+      }
+    },
+    {
       "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
       "smarthint": {
         "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
@@ -20,17 +41,7 @@
       }
     },
     {
-      "__resolveType": "Header - 01"
-    },
-    {
       "__resolveType": "Footer - 01"
-    },
-    {
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "smarthint": true,
-      "page": {
-        "__resolveType": "smarthint/loaders/productListingPage.ts"
-      }
     }
   ],
   "seo": {

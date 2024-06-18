@@ -1,6 +1,5 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   image: {
@@ -135,7 +134,9 @@ export default function ShoppableBanner(props: Props) {
             {text?.content}
           </p>
           <div class={`card-actions ${link?.layout?.position}`}>
-            <a class="underline" href={link?.href}>{link?.text}</a>
+            <a class="underline" href={link?.href}>
+              {link?.text}
+            </a>
           </div>
         </div>
       </div>

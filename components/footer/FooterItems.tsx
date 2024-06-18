@@ -1,5 +1,3 @@
-import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
-
 export type Item = {
   label: string;
   href: string;
@@ -10,9 +8,13 @@ export type Section = {
   items: Item[];
 };
 
-export default function FooterItems(
-  { sections, justify = false }: { sections: Section[]; justify: boolean },
-) {
+export default function FooterItems({
+  sections,
+  justify = false,
+}: {
+  sections: Section[];
+  justify: boolean;
+}) {
   return (
     <>
       {sections.length > 0 && (
@@ -26,9 +28,7 @@ export default function FooterItems(
             {sections.map((section) => (
               <li>
                 <div class="flex flex-col gap-2">
-                  <span class="font-medium text-lg">
-                    {section.label}
-                  </span>
+                  <span class="font-medium text-lg">{section.label}</span>
                   <ul class={`flex flex-col gap-2 flex-wrap text-sm`}>
                     {section.items?.map((item) => (
                       <li>
@@ -56,9 +56,7 @@ export default function FooterItems(
                     <span>{section.label}</span>
                   </label>
                   <div class="collapse-content">
-                    <ul
-                      class={`flex flex-col gap-1 pl-5 pt-2`}
-                    >
+                    <ul class={`flex flex-col gap-1 pl-5 pt-2`}>
                       {section.items?.map((item) => (
                         <li>
                           <a

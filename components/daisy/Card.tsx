@@ -14,15 +14,8 @@ export interface Props {
 }
 
 export default function Card(props: Props) {
-  const {
-    image,
-    title,
-    subtitle,
-    callToAction,
-    imageOnBottom,
-    glass,
-    imageOnSide,
-  } = props;
+  const { image, title, subtitle, callToAction, imageOnBottom, imageOnSide } =
+    props;
   return (
     <div
       className={`card ${
@@ -41,7 +34,7 @@ export default function Card(props: Props) {
           </div>
         )}
       </div>
-      {(imageOnBottom && !imageOnSide) && <CardImage image={image} />}
+      {imageOnBottom && !imageOnSide && <CardImage image={image} />}
     </div>
   );
 }

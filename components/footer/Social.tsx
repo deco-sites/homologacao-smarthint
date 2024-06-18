@@ -1,4 +1,4 @@
-import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 
 export interface SocialItem {
   label:
@@ -11,12 +11,13 @@ export interface SocialItem {
   link: string;
 }
 
-export default function Social(
-  { content, vertical = false }: {
-    content?: { title?: string; items?: SocialItem[] };
-    vertical?: boolean;
-  },
-) {
+export default function Social({
+  content,
+  vertical = false,
+}: {
+  content?: { title?: string; items?: SocialItem[] };
+  vertical?: boolean;
+}) {
   return (
     <>
       {content && content.items && content.items.length > 0 && (

@@ -331,17 +331,6 @@
     },
     {
       "__resolveType": "Footer - 04"
-    },
-    {
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "page": {
-        "__resolveType": "smarthint/loaders/searchListPage.ts",
-        "searchSort": 0,
-        "ruletype": "valuedouble",
-        "filter": [],
-        "condition": {},
-        "size": 24
-      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

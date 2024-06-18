@@ -7,6 +7,9 @@ import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
+import { AppContext } from "apps/smarthint/mod.ts";
+import { SmarthintPosition } from "apps/smarthint/loaders/vitrinesWithProducts.ts";
+import SmarthintProductShelf from "../../sections/Product/SmarthintProductShelf.tsx";
 
 export type Format = "Show More" | "Pagination";
 
@@ -35,11 +38,18 @@ export interface Props {
   startingPage?: 0 | 1;
 }
 
-function NotFound() {
+function NotFound({
+  smarthintPositionShelf,
+}: {
+  smarthintPositionShelf: SmarthintPosition[] | null;
+}) {
   return (
-    <div class="w-full flex justify-center items-center py-10">
-      <span>Not Found!</span>
-    </div>
+    <>
+      <div class="w-full flex justify-center items-center py-10">
+        <span>Not Found!</span>
+      </div>
+      <SmarthintProductShelf smarthint={smarthintPositionShelf} />
+    </>
   );
 }
 
@@ -148,18 +158,40 @@ function Result({
   );
 }
 
-function SearchResult({ page, ...props }: ReturnType<typeof loader>) {
-  if (!page) {
-    return <NotFound />;
+function SearchResult({
+  page,
+  smarthintPositionShelf,
+  ...props
+}: ReturnType<typeof loader>) {
+  if (!page?.products?.length) {
+    return <NotFound smarthintPositionShelf={smarthintPositionShelf} />;
   }
 
   return <Result {...props} page={page} />;
 }
 
-export const loader = (props: Props, req: Request) => {
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  const pageUrl = new URL(req.url);
+
+  const hasTerm = pageUrl.searchParams.get("q") ||
+    pageUrl.searchParams.get("busca");
+
+  let smarthintPositionShelf = null;
+
+  if (!props.page?.products?.length) {
+    smarthintPositionShelf = await ctx.invoke.smarthint.loaders
+      .vitrinesWithProducts({
+        pagetype: {
+          type: hasTerm ? "search" : "pagenotfound",
+        },
+        position: "1",
+      });
+  }
+
   return {
     ...props,
     url: req.url,
+    smarthintPositionShelf,
   };
 };
 

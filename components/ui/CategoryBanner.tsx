@@ -1,7 +1,6 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { SectionProps } from "deco/types.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
 /**
  * @titleBy matcher
@@ -69,14 +68,10 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
 
       <div class="container flex flex-col items-center justify-center sm:items-start col-start-1 col-span-1 row-start-1 row-span-1 w-full">
         <h1>
-          <span class="text-5xl font-medium text-base-100">
-            {title}
-          </span>
+          <span class="text-5xl font-medium text-base-100">{title}</span>
         </h1>
         <h2>
-          <span class="text-xl font-medium text-base-100">
-            {subtitle}
-          </span>
+          <span class="text-xl font-medium text-base-100">{subtitle}</span>
         </h2>
       </div>
     </div>

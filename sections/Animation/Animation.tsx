@@ -27,9 +27,11 @@ interface Props {
   children: Children;
 }
 
-function Animation(
-  { children, animationType = "fade-in", duration = "0.3" }: Props,
-) {
+function Animation({
+  children,
+  animationType = "fade-in",
+  duration = "0.3",
+}: Props) {
   const { section } = children;
 
   const { Component, props } = section;
@@ -154,7 +156,7 @@ const animationByType = {
 };
 
 export function Preview() {
-  const animationClass = animationClasses["slide-left"];
+  const _animationClass = animationClasses["slide-left"];
   const id = useId();
 
   return (

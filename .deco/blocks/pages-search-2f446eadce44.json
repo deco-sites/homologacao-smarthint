@@ -1,15 +1,25 @@
 {
   "name": "Search",
-  "path": "/busca",
+  "path": "/s",
   "sections": [
     {
       "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
       "pageType": "search"
     },
     {
+      "__resolveType": "site/sections/Images/SmartHintBanner.tsx",
+      "banners": {
+        "__resolveType": "smarthint/loaders/PLPBanners.ts",
+        "searchSort": 0,
+        "filter": [],
+        "ruletype": "valuedouble",
+        "condition": {}
+      }
+    },
+    {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "__resolveType": "smarthint/loaders/searchListPage.ts",
+        "__resolveType": "smarthint/loaders/productListingPage.ts",
         "size": 24,
         "condition": {}
       },

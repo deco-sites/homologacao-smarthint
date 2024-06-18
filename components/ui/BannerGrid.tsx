@@ -1,6 +1,5 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
 /**
  * @titleBy alt
@@ -65,25 +64,25 @@ const DESKTOP_COLUMNS = {
 };
 
 const RADIUS_MOBILE = {
-  "none": "rounded-none",
-  "sm": "rounded-sm",
-  "md": "rounded-md",
-  "lg": "rounded-lg",
-  "xl": "rounded-xl",
+  none: "rounded-none",
+  sm: "rounded-sm",
+  md: "rounded-md",
+  lg: "rounded-lg",
+  xl: "rounded-xl",
   "2xl": "rounded-2xl",
   "3xl": "rounded-3xl",
-  "full": "rounded-full",
+  full: "rounded-full",
 };
 
 const RADIUS_DESKTOP = {
-  "none": "sm:rounded-none",
-  "sm": "sm:rounded-sm",
-  "md": "sm:rounded-md",
-  "lg": "sm:rounded-lg",
-  "xl": "sm:rounded-xl",
+  none: "sm:rounded-none",
+  sm: "sm:rounded-sm",
+  md: "sm:rounded-md",
+  lg: "sm:rounded-lg",
+  xl: "sm:rounded-xl",
   "2xl": "sm:rounded-2xl",
   "3xl": "sm:rounded-3xl",
-  "full": "sm:rounded-full",
+  full: "sm:rounded-full",
 };
 
 const DEFAULT_PROPS: Props = {
@@ -126,16 +125,13 @@ export default function BannnerGrid(props: Props) {
 
   return (
     <section class="container w-full px-4 md:px-0 mx-auto">
-      {title &&
-        (
-          <div class="py-6 md:py-0 md:pb-[40px] flex items-center mt-6">
-            <h2 class="text-lg leading-5 font-semibold uppercase">
-              {title}
-            </h2>
+      {title && (
+        <div class="py-6 md:py-0 md:pb-[40px] flex items-center mt-6">
+          <h2 class="text-lg leading-5 font-semibold uppercase">{title}</h2>
 
-            <div class="bg-[#e5e5ea] h-[1px] w-full ml-4"></div>
-          </div>
-        )}
+          <div class="bg-[#e5e5ea] h-[1px] w-full ml-4"></div>
+        </div>
+      )}
       <div
         class={`grid gap-4 md:gap-6 ${
           MOBILE_COLUMNS[itemsPerLine?.mobile ?? 2]
