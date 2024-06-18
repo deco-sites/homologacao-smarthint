@@ -1,8 +1,23 @@
 {
-  "name": "Home",
+  "name": "Home - Teste",
   "sections": [
     {
       "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "smarthint/loaders/searchListPage.ts",
+        "searchSort": 0,
+        "ruletype": "valuedouble",
+        "filter": [],
+        "condition": {},
+        "size": 24
+      }
+    },
+    {
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
+      "pageType": "general"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -115,13 +130,17 @@
       }
     },
     {
-      "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
-      "content": [
-        {
-          "label": "HOT SALE",
-          "repeat": 30
-        }
-      ]
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "2",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
     },
     {
       "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
@@ -129,12 +148,47 @@
         "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
         "filter": [],
         "products": [],
+        "position": "3",
         "pagetype": {
           "type": "home"
         },
-        "channel": "APP",
-        "position": "4"
+        "channel": "padrao"
       }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "4",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "filter": [],
+        "products": [],
+        "position": "5",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
+      "content": [
+        {
+          "label": "HOT SALE",
+          "repeat": 30
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
@@ -297,53 +351,9 @@
       }
     },
     {
-      "__resolveType": "site/sections/Content/BlogPosts.tsx",
-      "title": "Blogposts",
-      "posts": [
-        {
-          "alt": "Item of the Summer",
-          "date": "January 15, 2024",
-          "href": "/",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1",
-          "label": "Item of the Summer",
-          "author": "deco.cx",
-          "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-        },
-        {
-          "alt": "Item of the Summer",
-          "date": "January 15, 2024",
-          "href": "/",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/a3f329d8-795c-4c3b-8049-ede939d599ef",
-          "label": "Item of the Summer",
-          "author": "deco.cx",
-          "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-        },
-        {
-          "alt": "Item of the Summer",
-          "date": "January 15, 2024",
-          "href": "/",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1",
-          "label": "Item of the Summer",
-          "author": "deco.cx",
-          "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-        }
-      ]
-    },
-    {
       "__resolveType": "Footer - 04"
-    },
-    {
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "page": {
-        "__resolveType": "smarthint/loaders/searchListPage.ts",
-        "searchSort": 0,
-        "ruletype": "valuedouble",
-        "filter": [],
-        "condition": {},
-        "size": 24
-      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
-  "path": "/"
+  "path": "/example-path"
 }

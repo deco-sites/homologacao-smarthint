@@ -5,8 +5,9 @@
 import * as $$$$$$$$$$$0 from "./apps/deco/algolia.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/linx-impulse.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/typesense.ts";
-import * as $$$$$$$$$$$3 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$4 from "./apps/site.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$4 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -125,8 +126,9 @@ const manifest = {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,
     "site/apps/deco/linx-impulse.ts": $$$$$$$$$$$1,
     "site/apps/deco/typesense.ts": $$$$$$$$$$$2,
-    "site/apps/decohub.ts": $$$$$$$$$$$3,
-    "site/apps/site.ts": $$$$$$$$$$$4,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$3,
+    "site/apps/decohub.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,
