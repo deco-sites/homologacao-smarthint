@@ -1,8 +1,8 @@
 import ProductShelf from "../../components/product/ProductShelf.tsx";
-import { SmarthintPosition } from "apps/smarthint/loaders/vitrinesWithProducts.ts";
+import { SmarthintRecommendation } from "apps/smarthint/utils/typings.ts";
 
 export interface Props {
-  smarthint: SmarthintPosition[] | null;
+  smarthint: SmarthintRecommendation[] | null;
 }
 
 function SmarthintProductShelf({ smarthint }: Props) {

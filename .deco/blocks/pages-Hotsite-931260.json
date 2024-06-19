@@ -30,7 +30,7 @@
     {
       "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
       "smarthint": {
-        "__resolveType": "smarthint/loaders/vitrinesWithProducts.ts",
+        "__resolveType": "smarthint/loaders/recommendations.ts",
         "filter": [],
         "products": [],
         "position": "0",

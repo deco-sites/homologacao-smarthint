@@ -8,7 +8,7 @@ import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import { AppContext } from "apps/smarthint/mod.ts";
-import { SmarthintPosition } from "apps/smarthint/loaders/vitrinesWithProducts.ts";
+import { SmarthintRecommendation } from "apps/smarthint/utils/typings.ts";
 import SmarthintProductShelf from "../../sections/Product/SmarthintProductShelf.tsx";
 
 export type Format = "Show More" | "Pagination";
@@ -39,16 +39,16 @@ export interface Props {
 }
 
 function NotFound({
-  smarthintPositionShelf,
+  SmarthintRecommendationShelf,
 }: {
-  smarthintPositionShelf: SmarthintPosition[] | null;
+  SmarthintRecommendationShelf: SmarthintRecommendation[] | null;
 }) {
   return (
     <>
       <div class="w-full flex justify-center items-center py-10">
         <span>Not Found!</span>
       </div>
-      <SmarthintProductShelf smarthint={smarthintPositionShelf} />
+      <SmarthintProductShelf smarthint={SmarthintRecommendationShelf} />
     </>
   );
 }
@@ -160,11 +160,13 @@ function Result({
 
 function SearchResult({
   page,
-  smarthintPositionShelf,
+  SmarthintRecommendationShelf,
   ...props
 }: ReturnType<typeof loader>) {
   if (!page?.products?.length) {
-    return <NotFound smarthintPositionShelf={smarthintPositionShelf} />;
+    return (
+      <NotFound SmarthintRecommendationShelf={SmarthintRecommendationShelf} />
+    );
   }
 
   return <Result {...props} page={page} />;
@@ -176,11 +178,11 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const hasTerm = pageUrl.searchParams.get("q") ||
     pageUrl.searchParams.get("busca");
 
-  let smarthintPositionShelf = null;
+  let SmarthintRecommendationShelf = null;
 
   if (!props.page?.products?.length) {
-    smarthintPositionShelf = await ctx.invoke.smarthint.loaders
-      .vitrinesWithProducts({
+    SmarthintRecommendationShelf = await ctx.invoke.smarthint.loaders
+      .recommendations({
         pagetype: {
           type: hasTerm ? "search" : "pagenotfound",
         },
@@ -191,7 +193,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   return {
     ...props,
     url: req.url,
-    smarthintPositionShelf,
+    SmarthintRecommendationShelf,
   };
 };
 
