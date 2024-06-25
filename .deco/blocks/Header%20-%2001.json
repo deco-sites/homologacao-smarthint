@@ -20,7 +20,9 @@
     "action": "/s",
     "loader": {
       "data": {
-        "__resolveType": "smarthint/loaders/autocomplete.ts"
+        "__resolveType": "smarthint/loaders/autocomplete.ts",
+        "sizeProducts": 10,
+        "sizeTerms": 3
       },
       "__resolveType": "resolved"
     },
