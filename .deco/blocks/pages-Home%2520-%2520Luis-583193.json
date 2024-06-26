@@ -1,0 +1,78 @@
+{
+  "name": "Home - Luis",
+  "path": "/home-deco",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": [
+        {
+          "@type": "RecommendationsProducts",
+          "products": [],
+          "combos": []
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "position": "2",
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao",
+        "position": "3"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao",
+        "position": "4"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao",
+        "position": "5"
+      }
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

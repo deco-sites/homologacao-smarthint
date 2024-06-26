@@ -2,6 +2,16 @@
   "name": "Home - Teste",
   "sections": [
     {
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
+      "pageType": "home",
+      "pages": [
+        {
+          "pageType": "home",
+          "page": "/"
+        }
+      ]
+    },
+    {
       "__resolveType": "Header - 01"
     },
     {
@@ -14,10 +24,6 @@
         "condition": {},
         "size": 24
       }
-    },
-    {
-      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
-      "pageType": "home"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -352,8 +358,17 @@
     },
     {
       "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
+      "pages": [
+        {
+          "pageType": "home",
+          "page": "/"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
-  "path": "/example-path"
+  "path": "/"
 }
