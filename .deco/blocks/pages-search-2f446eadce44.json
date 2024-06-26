@@ -6,12 +6,29 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
+      "pages": [
+        {
+          "pageType": "search",
+          "page": "/s"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "__resolveType": "smarthint/loaders/productListingPage.ts",
         "size": 12,
         "condition": {},
-        "page": null
+        "page": {
+          "__resolveType": "smarthint/loaders/productListingPage.ts",
+          "size": 12,
+          "searchSort": 0,
+          "filter": [],
+          "ruletype": "valuedouble",
+          "condition": {},
+          "page": null
+        }
       },
       "layout": {
         "columns": {
@@ -25,30 +42,24 @@
       "smarthint": true
     },
     {
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "jsonLD": {
-        "__resolveType": "smarthint/loaders/productListingPage.ts",
-        "size": 12,
-        "searchSort": 0,
-        "filter": [],
-        "ruletype": "valuedouble",
-        "condition": {},
-        "page": null
-      }
-    },
-    {
       "__resolveType": "site/sections/Images/SmartHintBanner.tsx",
       "banners": {
         "__resolveType": "smarthint/loaders/PLPBanners.ts",
         "searchSort": 0,
         "filter": [],
         "ruletype": "valuedouble",
-        "condition": {},
-        "page": null
+        "condition": {}
       }
     },
     {
       "__resolveType": "Footer - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "smarthint/loaders/productListingPage.ts",
+        "size": 12
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

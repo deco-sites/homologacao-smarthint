@@ -22,7 +22,7 @@
       "data": {
         "__resolveType": "smarthint/loaders/autocomplete.ts",
         "sizeProducts": 10,
-        "sizeTerms": 3
+        "sizeTerms": 10
       },
       "__resolveType": "resolved"
     },
