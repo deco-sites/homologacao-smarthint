@@ -1,6 +1,6 @@
 {
-  "name": "Search",
-  "path": "/s",
+  "name": "Search - Luis",
+  "path": "/search",
   "sections": [
     {
       "__resolveType": "Header - 01"

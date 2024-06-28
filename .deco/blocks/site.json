@@ -25,6 +25,31 @@
     },
     {
       "__resolveType": "htmx/sections/htmx.tsx"
+    },
+    {
+      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
+      "pages": [
+        {
+          "pageType": "home",
+          "page": "/home-deco"
+        },
+        {
+          "pageType": "search",
+          "page": "/s"
+        },
+        {
+          "pageType": "others",
+          "page": "/wishlist"
+        },
+        {
+          "pageType": "general",
+          "page": "/institucional/quem-somos"
+        },
+        {
+          "pageType": "product",
+          "page": "/product"
+        }
+      ]
     }
   ],
   "routes": [

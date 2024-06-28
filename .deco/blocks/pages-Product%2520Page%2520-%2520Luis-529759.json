@@ -1,5 +1,6 @@
 {
-  "name": "Home - OK",
+  "name": "Product Page - OK",
+  "path": "/product",
   "sections": [
     {
       "__resolveType": "Header - 01"
@@ -10,22 +11,10 @@
         "__resolveType": "smarthint/loaders/recommendations.ts",
         "filter": [],
         "products": [],
+        "position": "1",
         "pagetype": {
-          "type": "home"
-        },
-        "channel": "padrao",
-        "position": "1"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
-      "smarthint": {
-        "__resolveType": "smarthint/loaders/recommendations.ts",
-        "filter": [],
-        "products": [],
-        "position": "2",
-        "pagetype": {
-          "type": "home"
+          "type": "product",
+          "page": null
         },
         "channel": "padrao"
       }
@@ -37,7 +26,22 @@
         "filter": [],
         "products": [],
         "pagetype": {
-          "type": "home"
+          "type": "product",
+          "page": null
+        },
+        "channel": "padrao",
+        "position": "2"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "product",
+          "page": null
         },
         "channel": "padrao",
         "position": "3"
@@ -49,35 +53,10 @@
         "__resolveType": "smarthint/loaders/recommendations.ts",
         "filter": [],
         "products": [],
-        "pagetype": {
-          "type": "home"
-        },
         "position": "4",
-        "channel": "padrao"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
-      "smarthint": {
-        "__resolveType": "smarthint/loaders/recommendations.ts",
-        "filter": [],
-        "products": [],
         "pagetype": {
-          "type": "home"
-        },
-        "channel": "padrao",
-        "position": "5"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
-      "smarthint": {
-        "__resolveType": "smarthint/loaders/recommendations.ts",
-        "filter": [],
-        "products": [],
-        "position": "2",
-        "pagetype": {
-          "type": "home"
+          "type": "product",
+          "page": null
         },
         "channel": "padrao"
       }
@@ -88,20 +67,34 @@
         "__resolveType": "smarthint/loaders/recommendations.ts",
         "filter": [],
         "products": [],
+        "position": "5",
         "pagetype": {
-          "type": "home"
+          "type": "product",
+          "page": null
         },
-        "channel": "padrao",
-        "position": "1"
+        "channel": "padrao"
       }
     },
     {
       "__resolveType": "Footer - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "product",
+          "page": null
+        },
+        "channel": "padrao",
+        "position": "1"
+      }
     }
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx",
-  "path": "/home-deco"
+  "__resolveType": "website/pages/Page.tsx"
 }

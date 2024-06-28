@@ -1,25 +1,10 @@
 {
-  "name": "Category",
-  "path": "/*",
+  "name": "Category - OK",
+  "path": "/category",
   "default": {
     "possiblePaths": []
   },
   "sections": [
-    {
-      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
-      "pageType": "category"
-    },
-    {
-      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
-      "jsonLD": {
-        "__resolveType": "smarthint/loaders/productListingPage.ts",
-        "searchSort": 0,
-        "filter": [],
-        "ruletype": "valuedouble",
-        "condition": {},
-        "size": 24
-      }
-    },
     {
       "__resolveType": "Header - 01"
     },
@@ -42,6 +27,97 @@
       },
       "startingPage": 1,
       "smarthint": true
+    },
+    {
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "jsonLD": {
+        "__resolveType": "smarthint/loaders/productListingPage.ts",
+        "searchSort": 0,
+        "filter": [],
+        "ruletype": "valuedouble",
+        "condition": {},
+        "size": 24
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "position": "1",
+        "pagetype": {
+          "type": "category",
+          "page": {
+            "__resolveType": "PLP Loader"
+          }
+        },
+        "channel": "padrao"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "position": "2",
+        "pagetype": {
+          "type": "category",
+          "page": {
+            "__resolveType": "PLP Loader"
+          }
+        },
+        "channel": "padrao"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "category",
+          "page": {
+            "__resolveType": "PLP Loader"
+          }
+        },
+        "channel": "padrao",
+        "position": "3"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "position": "4",
+        "pagetype": {
+          "type": "category",
+          "page": {
+            "__resolveType": "PLP Loader"
+          }
+        },
+        "channel": "padrao"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "category",
+          "page": {
+            "__resolveType": "PLP Loader"
+          }
+        },
+        "channel": "padrao",
+        "position": "5"
+      }
     },
     {
       "__resolveType": "Footer - 01"

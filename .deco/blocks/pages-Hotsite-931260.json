@@ -1,11 +1,7 @@
 {
-  "name": "Hotsite",
+  "name": "Hotsite - Luis",
   "path": "/hotsite",
   "sections": [
-    {
-      "__resolveType": "smarthint/sections/Analytics/SmarthintTracking.tsx",
-      "pageType": "Others"
-    },
     {
       "__resolveType": "Header - 01"
     },
@@ -33,11 +29,11 @@
         "__resolveType": "smarthint/loaders/recommendations.ts",
         "filter": [],
         "products": [],
-        "position": "0",
         "pagetype": {
-          "type": "others"
+          "type": "home"
         },
-        "channel": "padrao"
+        "channel": "padrao",
+        "position": "1"
       }
     },
     {

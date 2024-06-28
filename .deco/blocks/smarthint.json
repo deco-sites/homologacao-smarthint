@@ -1,6 +1,6 @@
 {
   "__resolveType": "decohub/apps/smarthint.ts",
-  "cluster": "v5",
-  "shcode": "SH-714407",
-  "publicUrl": "https://www.lojaprohall.com.br/"
+  "cluster": "v1",
+  "publicUrl": "https://www.lojaprohall.com.br/",
+  "shcode": "SH-221650"
 }

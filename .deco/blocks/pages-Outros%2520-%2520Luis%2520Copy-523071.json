@@ -1,5 +1,5 @@
 {
-  "name": "Home - OK",
+  "name": "Outros - OK",
   "sections": [
     {
       "__resolveType": "Header - 01"
@@ -11,7 +11,7 @@
         "filter": [],
         "products": [],
         "pagetype": {
-          "type": "home"
+          "type": "others"
         },
         "channel": "padrao",
         "position": "1"
@@ -25,7 +25,7 @@
         "products": [],
         "position": "2",
         "pagetype": {
-          "type": "home"
+          "type": "others"
         },
         "channel": "padrao"
       }
@@ -37,7 +37,7 @@
         "filter": [],
         "products": [],
         "pagetype": {
-          "type": "home"
+          "type": "others"
         },
         "channel": "padrao",
         "position": "3"
@@ -50,10 +50,10 @@
         "filter": [],
         "products": [],
         "pagetype": {
-          "type": "home"
+          "type": "others"
         },
-        "position": "4",
-        "channel": "padrao"
+        "channel": "padrao",
+        "position": "4"
       }
     },
     {
@@ -63,36 +63,10 @@
         "filter": [],
         "products": [],
         "pagetype": {
-          "type": "home"
+          "type": "others"
         },
         "channel": "padrao",
         "position": "5"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
-      "smarthint": {
-        "__resolveType": "smarthint/loaders/recommendations.ts",
-        "filter": [],
-        "products": [],
-        "position": "2",
-        "pagetype": {
-          "type": "home"
-        },
-        "channel": "padrao"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
-      "smarthint": {
-        "__resolveType": "smarthint/loaders/recommendations.ts",
-        "filter": [],
-        "products": [],
-        "pagetype": {
-          "type": "home"
-        },
-        "channel": "padrao",
-        "position": "1"
       }
     },
     {
@@ -103,5 +77,5 @@
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx",
-  "path": "/home-deco"
+  "path": "/wishlist"
 }
