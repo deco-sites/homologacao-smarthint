@@ -3,11 +3,17 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $$$$$$$$$$$0 from "./apps/deco/algolia.ts";
-import * as $$$$$$$$$$$1 from "./apps/deco/linx-impulse.ts";
-import * as $$$$$$$$$$$2 from "./apps/deco/typesense.ts";
-import * as $$$$$$$$$$$3 from "./apps/deco/vtex.ts";
-import * as $$$$$$$$$$$4 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$5 from "./apps/site.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco/analytics.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/brand-assistant.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/htmx.ts";
+import * as $$$$$$$$$$$4 from "./apps/deco/implementation.ts";
+import * as $$$$$$$$$$$5 from "./apps/deco/linx-impulse.ts";
+import * as $$$$$$$$$$$6 from "./apps/deco/typesense.ts";
+import * as $$$$$$$$$$$7 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$8 from "./apps/deco/weather.ts";
+import * as $$$$$$$$$$$9 from "./apps/deco/workflows.ts";
+import * as $$$$$$$$$$$10 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$11 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -126,11 +132,17 @@ const manifest = {
   },
   "apps": {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,
-    "site/apps/deco/linx-impulse.ts": $$$$$$$$$$$1,
-    "site/apps/deco/typesense.ts": $$$$$$$$$$$2,
-    "site/apps/deco/vtex.ts": $$$$$$$$$$$3,
-    "site/apps/decohub.ts": $$$$$$$$$$$4,
-    "site/apps/site.ts": $$$$$$$$$$$5,
+    "site/apps/deco/analytics.ts": $$$$$$$$$$$1,
+    "site/apps/deco/brand-assistant.ts": $$$$$$$$$$$2,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$3,
+    "site/apps/deco/implementation.ts": $$$$$$$$$$$4,
+    "site/apps/deco/linx-impulse.ts": $$$$$$$$$$$5,
+    "site/apps/deco/typesense.ts": $$$$$$$$$$$6,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$7,
+    "site/apps/deco/weather.ts": $$$$$$$$$$$8,
+    "site/apps/deco/workflows.ts": $$$$$$$$$$$9,
+    "site/apps/decohub.ts": $$$$$$$$$$$10,
+    "site/apps/site.ts": $$$$$$$$$$$11,
   },
   "name": "site",
   "baseUrl": import.meta.url,
