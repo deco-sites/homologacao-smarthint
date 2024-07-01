@@ -97,6 +97,19 @@
     },
     {
       "__resolveType": "Footer - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/SmarthintProductShelf.tsx",
+      "smarthint": {
+        "__resolveType": "smarthint/loaders/recommendations.ts",
+        "filter": [],
+        "products": [],
+        "pagetype": {
+          "type": "home"
+        },
+        "channel": "padrao",
+        "position": "2"
+      }
     }
   ],
   "seo": {

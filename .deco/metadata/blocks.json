@@ -362,7 +362,7 @@
     "__resolveType": "site/apps/deco/vtex.ts"
   },
   "/.deco/blocks/pages-Home%2520-%2520Luis-583193.json": {
-    "name": "Home - Luis",
+    "name": "Home - OK",
     "path": "/home-deco",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
