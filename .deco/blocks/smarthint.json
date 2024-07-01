@@ -2,5 +2,9 @@
   "__resolveType": "decohub/apps/smarthint.ts",
   "cluster": "v1",
   "publicUrl": "https://www.lojaprohall.com.br/",
-  "shcode": "SH-221650"
+  "shcode": "SH-221650",
+  "categoryTree": {
+    "__resolveType": "vtex/loaders/categories/tree.ts",
+    "categoryLevels": 4
+  }
 }
